@@ -3,12 +3,12 @@
  * Plugin Maintenance
  *
  * @package	PLX
- * @version	4.0
- * @date	10/10/2013
+ * @version	4.1
+ * @date	19/03/2013
  * @author	Cyril MAGUIRE
  **/
-include_once(PLX_PLUGINS.'DebugToolBar/class_outils_debug.php');
-class DebugToolBar extends plxPlugin {
+include_once(PLX_PLUGINS.'DebugToolBarForPluxml/class_outils_debug.php');
+class DebugToolBarForPluxml extends plxPlugin {
 
 	public $Debug;
 	
@@ -59,9 +59,9 @@ class DebugToolBar extends plxPlugin {
 		
 			$string = '
 			if (str_pad(str_replace(".","",$plxAdmin->aConf["version"]), 3, "0", STR_PAD_RIGHT) < 520 ) {
-				$DebugToolBar = $plxAdmin->plxPlugins->aPlugins["DebugToolBar"]["instance"];
+				$DebugToolBar = $plxAdmin->plxPlugins->aPlugins["DebugToolBarForPluxml"]["instance"];
 			} else {
-				$DebugToolBar = $plxAdmin->plxPlugins->aPlugins["DebugToolBar"];
+				$DebugToolBar = $plxAdmin->plxPlugins->aPlugins["DebugToolBarForPluxml"];
 			}
 			if($DebugToolBar->getParam("public")==1) {
 				echo "<p class=\"notice\">".$DebugToolBar->getLang("L_DEBUG_ACTIVATED_IN_PUBLIC")."</p>";
