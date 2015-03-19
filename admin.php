@@ -10,7 +10,7 @@
 	if(!empty($_POST)) {
 		$plxPlugin->setParam('public', $_POST['public'], 'numeric');
 		$plxPlugin->saveParams();
-		header('Location: plugin.php?p=DebugToolBar');
+		header('Location: plugin.php?p=DebugToolBarForPluxml');
 		exit;
 	}
 ?>
@@ -18,7 +18,7 @@
 <h2><?php $plxPlugin->lang('L_TITLE') ?></h2>
 <p><?php $plxPlugin->lang('L_CONFIG_DESCRIPTION') ?></p>
 
-<form action="plugin.php?p=DebugToolBar" method="post">
+<form action="plugin.php?p=DebugToolBarForPluxml" method="post">
 	<fieldset class="withlabel">
 		<h2><?php echo $plxPlugin->getLang('L_CONFIG_PUBLIC') ?></h2>
 		<p style="color:red;"><?php echo $plxPlugin->getLang('L_BE_CAREFUL_IN_PRODUCTION') ?></p>
