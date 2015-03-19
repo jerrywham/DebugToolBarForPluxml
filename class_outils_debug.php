@@ -24,7 +24,7 @@ class Debug {
 
         $this->default_lang = $default_lang;
         $this->version = $version;
-        $this->loadLang(PLX_PLUGINS.'DebugToolBar/lang/'.$this->default_lang.'.php');
+        $this->loadLang(PLX_PLUGINS.'DebugToolBarForPluxml/lang/'.$this->default_lang.'.php');
 
       }
       /****************************************************************************/
@@ -228,7 +228,7 @@ class Debug {
     * @author  Cyril MAGUIRE<contact@ecyseo.net>
     * @version 2.0
     */
-    public function init() {
+    public static function init() {
       if(in_array($_SERVER['REMOTE_ADDR'], self::$allow_IP)){
         self::$debug = true;
         //error_reporting(E_ALL);
