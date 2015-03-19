@@ -4,7 +4,7 @@
  *
  * @package	PLX
  * @version	4.1
- * @date	19/03/2013
+ * @date	19/03/2015
  * @author	Cyril MAGUIRE
  **/
 include_once(PLX_PLUGINS.'DebugToolBarForPluxml/class_outils_debug.php');
