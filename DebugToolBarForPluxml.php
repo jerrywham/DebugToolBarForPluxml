@@ -3,7 +3,7 @@
  * Plugin Maintenance
  *
  * @package	PLX
- * @version	4.1
+ * @version	4.1.1
  * @date	19/03/2015
  * @author	Cyril MAGUIRE
  **/
